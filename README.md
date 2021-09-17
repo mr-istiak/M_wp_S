@@ -21,7 +21,7 @@ MWPS({
 6. Then copy and replace the bellow section in your package.json
 ```
 "scripts": {
-    "build-mwps": "node mwps.config.js"
+    "build-mwps": "node mwps.config.js && composer install && composer dupp-autoload"
 },
 ```
 7. Now run `npm run build-mwps` in your cmd on your project location.
