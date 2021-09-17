@@ -1,0 +1,21 @@
+{
+    "name": "m.r.i/mwps",
+    "description": "This is a Stater Theme",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "mr-istiak",
+            "email": "m.r.istiak2007@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Root\\": "./",
+            "Inc\\": "./inc",
+            "Core\\": "./inc/M_wp_S/core"
+        }
+    }
+}

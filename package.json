@@ -1,0 +1,15 @@
+{
+  "name": "mwps_git_upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-mwps": "node mwps.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mwps-core": "^1.2.0"
+  }
+}
