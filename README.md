@@ -1,23 +1,27 @@
-# Wait Don't Copy Or Clone The Reposetory. If You Do This The Stater Theme Will Not Work. See The Intalletion.
+# MWPS WordPress Starter Theme
+Wait Don't Copy Or Clone The Repository. If You Do this.This Theme Will Not Work. See The Installation.
 
-# Intalletion.
+## Installation.
 
-1. First Make a Directory.
-2. Then Into The Directory Make a package.json file.
+1. First make a directory.
+2. Then make a package.json file in that directory.
 You Can Do This By Writing In Your CMD.
 `npm init` OR `npm init -y`
-
-3. Then Go To The Below Position In Your package.json And Copy The "set" Text Line In The Same Position Of Your package.json
+3. Then run `npm i mwps-core --save-dev` in your cmd.
+4. Into your theme dir make a folder named `mwps.config.js`
+5. Copy and paste the bellow code in your mwps.config.js file
 ```
-"name": "m_wp_s",
-"version": "1.0.0",
-"description": "M_wp_S is a Stater Theme for wordpress",
-"main": "index.js",
-
+const MWPS = require('mwps-core');
+MWPS({
+    plugin: [
+        
+    ]
+});
+```
+6. Then copy and replace the bellow section in your package.json
+```
 "scripts": {
-    "set": "npm install --save-dev gulp"
+    "build-mwps": "node mwps.config.js"
 },
-
-"author": "M.R Istiak",
-"license": "ISC"
 ```
+7. Now run `npm run build-mwps` in your cmd on your project location.
